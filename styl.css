@@ -1,0 +1,304 @@
+* {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+                                
+}
+html {
+    font-size: 18px;
+    font-family: "Trebuchet Ms";
+    color: white;
+    background-color: rgb(6, 6, 6);
+    height: 100%;
+    width: 100%;
+}
+#container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 250px 750px 250px;
+    grid-template-rows: 100px 560px 250px;
+    grid-template-areas: 
+    "wynik wynik opcje"
+    "gra gra informacje"
+    "gra gra informacje";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#wynik {
+    font-size: 4.5rem;
+    text-align: center;
+    grid-area: wynik;
+    display: block;
+    height: auto;
+    width: auto;
+    border: 3px white solid;
+}
+#gra {
+    grid-area: gra;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    height: auto;
+    width: auto;
+    border: 3px white solid;
+    border-collapse: collapse;
+    justify-content: center;
+}
+#opcje {
+    grid-area: opcje;
+    display: flex;
+    width: auto;
+    border: 3px white solid;
+}
+#opcja1 {
+    padding-top: 35px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#opcja1:hover {
+    background-color: rgb(24, 24, 24);
+    transition: 1s;
+}
+#opcja2:hover {
+    background-color: rgb(24, 24, 24);
+    transition: 1s;
+}
+#opcja2 {
+    padding-top: 35px;;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#informacje {
+    padding: 10px 20px 20px 20px;
+    grid-area: informacje;
+    display: block;
+    height: auto;
+    width: auto;
+    border: 3px white solid;
+    line-height: 30px;
+    overflow: auto;
+}
+#informacje {
+    scrollbar-color: #1c1c1c #000000;
+    transition: scrollbar-color 0.3s ease-out;
+    scrollbar-width: thin;
+}
+#informacje:hover {
+    scrollbar-color: #0e0e0e;
+}
+.blok {
+    height: 200px;
+    width: 200px;
+    border: 3px white solid;
+    font-size: 9rem;
+    text-align: center;
+    
+}
+#blok1 {
+    border-left-width: 0px;
+    border-top-width: 0px;
+}
+#blok2 {
+    border-top-width: 0px;
+}
+#blok3 {
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+#blok4 {
+    border-left-width: 0px;
+}
+#blok6 {
+    border-right-width: 0px;
+}
+#blok7 {
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+}
+#blok8 {
+    border-bottom-width: 0px;
+}
+#blok9 {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+.p {
+    text-align: center;
+}
+-webkit-scrollbar-track
+{
+    background-color: #000;
+}
+
+-webkit-scrollbar
+{
+    width: 7px;
+    background-color: transparent;
+}
+
+-webkit-scrollbar-thumb
+{
+      background-color: #1cb591;
+}
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 9px;
+        height: 100%;
+        width: 100%;
+    }
+    #container {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 100px 200px 100px;
+        grid-template-rows: 50px 280px 125px;
+        grid-template-areas: 
+        "wynik wynik opcje"
+        "gra gra informacje"
+        "gra gra informacje";
+    }
+    .blok {
+        height: 100px;
+        width: 90px;
+        border: 3px white solid;
+        font-size: 9rem;
+        padding-top: 5px;
+        text-align: center;
+    }
+    #gra {
+        grid-area: gra;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 34px;;
+        height: auto;
+        width: auto;
+        border: 3px white solid;
+        border-collapse: collapse;
+        justify-content: center;
+    }
+    #opcja1 {
+        padding-top: 15px;
+        padding-left: 4px;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #opcja2 {
+        padding-top: 11.5px;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #wynik {
+        font-size: 4.25rem;
+        text-align: center;
+        grid-area: wynik;
+        display: block;
+        height: auto;
+        width: auto;
+        border: 3px white solid;
+    }
+    .p {
+        line-height: 10px;
+    }
+    #informacje {
+        padding: 10px 20px 20px 20px;
+        grid-area: informacje;
+        display: block;
+        height: auto;
+        width: auto;
+        border: 3px white solid;
+        line-height: 12px;
+        overflow: auto;
+    }  
+}
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 9px;
+    }
+    #container {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 25px 200px 100px;
+        grid-template-rows: 50px 250px 125px;
+        grid-template-areas: 
+        "wynik wynik opcje"
+        "gra gra informacje"
+        "gra gra informacje";
+    }
+    .blok {
+        height: 70px;
+        width: 60px;
+        border: 3px white solid;
+        font-size: 6rem;
+        text-align: center;
+    }
+    #gra {
+        grid-area: gra;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 65px;
+        border: 3px white solid;
+        border-collapse: collapse;
+        justify-content: center;
+    }
+    #opcja1 {
+        padding-top: 15px;
+        padding-left: 4px;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #opcja2 {
+        padding-top: 11.5px;
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #wynik {
+        font-size: 4.25rem;
+        text-align: center;
+        grid-area: wynik;
+        display: block;
+        height: auto;
+        width: auto;
+        border: 3px white solid;
+    }
+    .p {
+        line-height: 10px;
+    }
+    #informacje {
+        padding: 10px 20px 20px 20px;
+        grid-area: informacje;
+        display: block;
+        height: auto;
+        width: auto;
+        border: 3px white solid;
+        line-height: 12px;
+        overflow: auto;
+    }  
+}
