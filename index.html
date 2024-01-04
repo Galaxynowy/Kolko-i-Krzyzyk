@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Galaxynowy">
-    <meta name="description" content="kółko i krzyżyk">
-    <title>Kółko i Krzyżyk</title>
-    <link rel="stylesheet" href="styl.css">
-    <link rel="stylesheet" href="rgbblocks.css">
-    <link rel="icon" href="icon.png">
-    <script defer="defer" src="test.js"></script>
-</head>
-<body>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Galaxynowy" />
+		<meta name="description" content="kółko i krzyżyk" />
+		<title>Kółko i Krzyżyk</title>
+		<link rel="stylesheet" href="styl.css" />
+		<link rel="stylesheet" href="rgbblocks.css" />
+		<link rel="icon" href="icon.png" />
+		<script defer="defer" src="test.js"></script>
+	</head>
+	<body>
+		<div class="background"></div>
 
-    <div class="background">
-
-    </div>
-
-    <div id="container">
-        <div id="wynik"><b style="color: #33c4fd">0</b> - <b style="color: #9b0ff8">0</b></div>
-        <div id="gra">
-            <div class="blok" id="blok1" onclick="gra(1)"></div>
-            <div class="blok" id="blok2" onclick="gra(2)"></div>
-            <div class="blok" id="blok3" onclick="gra(3)"></div>
-            <div class="blok" id="blok4" onclick="gra(4)"></div>
-            <div class="blok" id="blok5" onclick="gra(5)"></div>
-            <div class="blok" id="blok6" onclick="gra(6)"></div>
-            <div class="blok" id="blok7" onclick="gra(7)"></div>
-            <div class="blok" id="blok8" onclick="gra(8)"></div>
-            <div class="blok" id="blok9" onclick="gra(9)"></div>
-        </div>
-        <div id="opcje">
-            <div id="opcja1" onclick="nowa_gra()">Nowa gra</div>
-            <div id="opcja2" onclick="usuń_historię()">Usuń historię</div>
-        </div>
-        <div id="informacje">
-            <p class="p">Historia zwycięstw:</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+		<div id="container">
+			<div id="wynik">
+				<b style="color: #33c4fd">0</b> - <b style="color: #9b0ff8">0</b>
+			</div>
+			<div id="gra">
+				<div class="blok" id="blok1" onclick="gra(1)"></div>
+				<div class="blok" id="blok2" onclick="gra(2)"></div>
+				<div class="blok" id="blok3" onclick="gra(3)"></div>
+				<div class="blok" id="blok4" onclick="gra(4)"></div>
+				<div class="blok" id="blok5" onclick="gra(5)"></div>
+				<div class="blok" id="blok6" onclick="gra(6)"></div>
+				<div class="blok" id="blok7" onclick="gra(7)"></div>
+				<div class="blok" id="blok8" onclick="gra(8)"></div>
+				<div class="blok" id="blok9" onclick="gra(9)"></div>
+			</div>
+			<div id="opcje">
+				<div id="opcja1" onclick="nowa_gra()">Nowa gra</div>
+				<div id="opcja2" onclick="usuń_historię()">Usuń historię</div>
+			</div>
+			<div id="informacje">
+				<p class="p">Historia zwycięstw:</p>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
